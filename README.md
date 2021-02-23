@@ -2,12 +2,6 @@
 
 TODO
 
-* Buttons
-  * Primary
-  * Secondary
-  * Tertiary
-  * SM/MD/LG/XL
-
 * Input
   * Basic text input and a few special cases
   * Checkbox
@@ -19,10 +13,6 @@ TODO
 
 * Textarea
 * Select
-
-* Modal
-  * Large
-  * Small
 
 * Accordion
 * Progress

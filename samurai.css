@@ -5,6 +5,9 @@
   --md: 20px;
   --lg: 30px;
   --xl: 40px;
+  --primary: green;
+  --secondary: yellow;
+  --tertiary: red;
 }
 
 /* Padding */
@@ -103,3 +106,108 @@
 .half-height { height: 50%; }
 .quarter-height { height: 25%; }
 
+/* Buttons */
+
+.btn {
+  border: none;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+.btn__primary--sm { font-size: 12px; padding: 10px 20px 10px 20px; background-color: var(--primary); }
+.btn__primary--md { font-size: 16px; padding: 15px 30px 15px 30px; background-color: var(--primary); }
+.btn__primary--lg { font-size: 18px; padding: 20px 40px 20px 40px; background-color: var(--primary); }
+.btn__primary--xl { font-size: 20px; padding: 25px 50px 25px 50px; background-color: var(--primary); }
+
+.btn__secondary--sm { font-size: 12px; padding: 10px 20px 10px 20px; background-color: var(--secondary); color: black; }
+.btn__secondary--md { font-size: 16px; padding: 15px 30px 15px 30px; background-color: var(--secondary); color: black; }
+.btn__secondary--lg { font-size: 18px; padding: 20px 40px 20px 40px; background-color: var(--secondary); color: black; }
+.btn__secondary--xl { font-size: 20px; padding: 25px 50px 25px 50px; background-color: var(--secondary); color: black; }
+
+.btn__tertiary--sm { font-size: 12px; padding: 10px 20px 10px 20px; background-color: var(--tertiary); }
+.btn__tertiary--md { font-size: 16px; padding: 15px 30px 15px 30px; background-color: var(--tertiary); }
+.btn__tertiary--lg { font-size: 18px; padding: 20px 40px 20px 40px; background-color: var(--tertiary); }
+.btn__tertiary--xl { font-size: 20px; padding: 25px 50px 25px 50px; background-color: var(--tertiary); }
+
+/* End Buttons */
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rbg(0, 0, 0);
+  background-color: rbg(0, 0, 0, 0.4);
+}
+
+.modal__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+              0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: popIn;
+  animation-duration: 0.4s
+}
+
+/* Close Button */
+.modal__close {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal__body {
+  padding: 2px 16px;
+}
+
+.modal__footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+/* Animations */
+
+@keyframes popIn {
+  from {top: -300px; opacity: 0;}
+  to { top: 0; opacity: 1;}
+}
+
+
+/* End Modal */
+
+/* Responsive Images */
+
+.img--responsive { max-width: 100%; height: auto; }
+
+/* End Responsive Images */

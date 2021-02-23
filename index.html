@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samurai CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="samurai.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Samurai CSS</h1>
+    <!-- Buttons -->
+    <div class="buttons">
+      <h2>Buttons</h2>
+      <p>Button Primary</p>
+      <p><code>btn__primary--sm</code></p>
+      <p><code>btn__primary--md</code></p>
+      <p><code>btn__primary--lg</code></p>
+      <p><code>btn__primary--xl</code></p>
+      <button class="btn btn__primary--sm">Click Me</button>
+      <button class="btn btn__primary--md">Click Me</button>
+      <button class="btn btn__primary--lg">Click Me</button>
+      <button class="btn btn__primary--xl">Click Me</button>
+      <p>Button Secondary</p>
+      <p><code>btn__secondary--sm</code></p>
+      <p><code>btn__secondary--md</code></p>
+      <p><code>btn__secondary--lg</code></p>
+      <p><code>btn__secondary--xl</code></p>
+      <button class="btn btn__secondary--sm">Click Me</button>
+      <button class="btn btn__secondary--md">Click Me</button>
+      <button class="btn btn__secondary--lg">Click Me</button>
+      <button class="btn btn__secondary--xl">Click Me</button>
+      <p>Button Tertiary</p>
+      <p><code>btn__tertiary--sm</code></p>
+      <p><code>btn__tertiary--md</code></p>
+      <p><code>btn__tertiary--lg</code></p>
+      <p><code>btn__tertiary--xl</code></p>
+      <button class="btn btn__tertiary--sm">Click Me</button>
+      <button class="btn btn__tertiary--md">Click Me</button>
+      <button class="btn btn__tertiary--lg">Click Me</button>
+      <button class="btn btn__tertiary--xl">Click Me</button>
+      <p>TODO: Do do hover animations for buttons</p>
+    </div>
+    <!-- End Buttons -->
+    <hr>
+    <!-- Modal -->
+    <h2>Modal</h2>
+    <button id="modalBtn">Open Modal</button>
+    <div class="modal" id="primaryModal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <span class="modal__close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal__body">
+          <p>Help me, Obi Wan Kenobi</p>
+          <p>You're my only hope</p>
+        </div>
+        <div class="modal__footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <hr>
+
+    <h2>Responsive Images</h2>
+    <p>(shrink down the window to see the responsiveness)</p>
+    <img src="img/samurai.jpg" alt="Sammy the Samurai" class="img--responsive">
+    <hr>
+  </div>
+
+  <script src="samurai.js"></script>
+</body>
+</html>
