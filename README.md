@@ -3,7 +3,6 @@
 TODO
 
 * Input
-  * Basic text input and a few special cases
   * Checkbox
   * Color
   * Date
